@@ -13,22 +13,24 @@ public class Maximum {
     }
 
     // compareTo method check the maximum number among three numbers and return it :-
-    public Integer compareTo() {
+    public Float compareTo() {
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first number");
-        Integer number1 = scanner.nextInt();
+        Float number1 = scanner.nextFloat();
 
         System.out.println("Enter second number");
-        Integer number2 = scanner.nextInt();
+        Float number2 = scanner.nextFloat();
 
         System.out.println("Enter third number");
-        Integer number3 = scanner.nextInt();
-        Integer maximum = number1;
+        Float number3 = scanner.nextFloat();
+
+        Float maximum = number1;
 
         if (number1 > number2 && number1 > number3) {
             maximum = number1;
+
         } else if (number2 > number1 && number2 > number3) {
             maximum = number2;
 
